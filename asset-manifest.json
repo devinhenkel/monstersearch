@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/monstersearch/static/css/main.55c39b3e.chunk.css",
+    "main.js": "/monstersearch/static/js/main.373876f0.chunk.js",
+    "main.js.map": "/monstersearch/static/js/main.373876f0.chunk.js.map",
+    "runtime-main.js": "/monstersearch/static/js/runtime-main.111f266e.js",
+    "runtime-main.js.map": "/monstersearch/static/js/runtime-main.111f266e.js.map",
+    "static/js/2.e69ab3e1.chunk.js": "/monstersearch/static/js/2.e69ab3e1.chunk.js",
+    "static/js/2.e69ab3e1.chunk.js.map": "/monstersearch/static/js/2.e69ab3e1.chunk.js.map",
+    "index.html": "/monstersearch/index.html",
+    "precache-manifest.e73130de6b5f22162a2b7ce0da4ccd5b.js": "/monstersearch/precache-manifest.e73130de6b5f22162a2b7ce0da4ccd5b.js",
+    "service-worker.js": "/monstersearch/service-worker.js",
+    "static/css/main.55c39b3e.chunk.css.map": "/monstersearch/static/css/main.55c39b3e.chunk.css.map",
+    "static/media/lab-logo-white.svg": "/monstersearch/static/media/lab-logo-white.834da208.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.111f266e.js",
+    "static/js/2.e69ab3e1.chunk.js",
+    "static/css/main.55c39b3e.chunk.css",
+    "static/js/main.373876f0.chunk.js"
+  ]
+}
