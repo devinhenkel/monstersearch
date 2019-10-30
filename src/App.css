@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  font-family: museo-sans, sans-serif;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
 }
 
 .App-header {
@@ -15,8 +16,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: linear-gradient(
+    to bottom, 
+    rgba(7 ,27, 82, 100%),
+    rgba(40,44,52,100%)
+  )
 }
 
 .App-link {
   color: #09d3ac;
 }
+
+.searchBox {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: museo, Sans;
+  font-size: 0.8em;
+}
+
+

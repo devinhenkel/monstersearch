@@ -1,0 +1,35 @@
+.monster-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #6622da;
+    border: 1px solid #331143;
+    border-radius: 10px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.monster-card-container:hover {
+    transform: scale(1.05);
+}
+
+.monster-name {
+    font-family: museo,serif;
+    font-size: 0.6em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.monster-email {
+    font-family: museo-sans, sans-serif;
+    font-size: .5em;
+}
+
+.monster-image {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
