@@ -1,2 +1,190 @@
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}.monster-card-container{display:flex;flex-direction:column;background-color:#6622da;border:1px solid #331143;border-radius:10px;padding:25px;cursor:pointer;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition:-webkit-transform .25s ease-out;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.monster-card-container:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}.monster-name{font-family:museo,serif;font-size:.6em;font-weight:700;font-style:normal}.monster-email{font-family:museo-sans,sans-serif;font-size:.5em}.monster-image{width:150px}.card-list,.monster-image{margin-left:auto;margin-right:auto}.card-list{width:85vw;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-gap:20px}.App{text-align:center;font-family:museo-sans,sans-serif}.App-logo{height:20vmin}.App-header{background-color:#282c34;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:calc(10px + 2vmin);color:#fff;background:-webkit-gradient(linear,left top,left bottom,from(rgba(7,27,82,100%)),to(rgba(40,44,52,100%)));background:linear-gradient(180deg,rgba(7,27,82,100%),rgba(40,44,52,100%))}.App-link{color:#09d3ac}.searchBox{padding:10px;margin-bottom:20px;font-family:museo,Sans;font-size:.8em}
+/* Base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Monster card styles */
+.monster-card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #6622da;
+  border: 1px solid #331143;
+  border-radius: 10px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: -webkit-transform .25s ease-out;
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+}
+
+.monster-card-container:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.monster-name {
+  font-family: museo, serif;
+  font-size: 0.6em;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.monster-email {
+  font-family: museo-sans, sans-serif;
+  font-size: 0.5em;
+}
+
+.monster-image {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive card list - THIS IS THE KEY CHANGE */
+.card-list {
+  width: 85vw;
+  display: grid;
+  grid-gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Default: 4 columns for large screens */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Large tablets and smaller desktops */
+@media (max-width: 1200px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+  }
+  
+  .App-header {
+    padding: 20px;
+  }
+  
+  .App-logo {
+    height: 15vmin;
+  }
+  
+  .searchBox {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .card-list {
+    grid-template-columns: 1fr;
+    width: 95vw;
+    grid-gap: 15px;
+  }
+  
+  .monster-card-container {
+    padding: 20px;
+  }
+  
+  .monster-image {
+    width: 120px;
+  }
+  
+  .monster-name {
+    font-size: 0.8em;
+  }
+  
+  .monster-email {
+    font-size: 0.6em;
+  }
+  
+  .App-logo {
+    height: 12vmin;
+  }
+  
+  .searchBox {
+    width: 90%;
+    font-size: 0.9em;
+  }
+  
+  .App-header {
+    padding: 15px;
+    font-size: calc(8px + 2vmin);
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+  .card-list {
+    width: 98vw;
+    grid-gap: 10px;
+  }
+  
+  .monster-card-container {
+    padding: 15px;
+  }
+  
+  .monster-image {
+    width: 100px;
+  }
+}
+
+/* App styles */
+.App {
+  text-align: center;
+  font-family: museo-sans, sans-serif;
+}
+
+.App-logo {
+  height: 20vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7,27,82,100%)), to(rgba(40,44,52,100%)));
+  background: linear-gradient(180deg, rgba(7,27,82,100%), rgba(40,44,52,100%));
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.searchBox {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: museo, Sans;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
 /*# sourceMappingURL=main.55c39b3e.chunk.css.map */
